@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Credit Score Simulator", layout="centered")
-st.title("💳 Simple Credit Score Simulator")
+st.title("Simple Credit Score Simulator")
 st.write("Estimate your credit score based on key financial behavior indicators.")
 
 missed_payments = st.slider("Number of Missed Payments (last 12 months)", 0, 10, 0)
@@ -9,7 +9,7 @@ credit_util = st.slider("Credit Utilization (%)", 0, 100, 30)
 credit_age = st.slider("Age of Credit History (years)", 0, 25, 3)
 total_accounts = st.slider("Total Credit Accounts", 1, 20, 5)
 
-score = 300  # base
+score = 300 
 
 if missed_payments == 0:
     score += 180
