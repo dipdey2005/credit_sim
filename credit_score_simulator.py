@@ -68,4 +68,4 @@ if credit_age < 3:
     st.info("Try to build a longer credit history over time.")
 
 st.markdown("---")
-st.caption("Disclaimer: This is a simulated tool and not a real credit scoring model.")
+
